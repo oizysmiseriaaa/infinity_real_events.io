@@ -1,0 +1,79 @@
+#about {
+  position: relative;
+  padding: 100px 0;
+  background: #00183d;
+  background-image: url('../images/our_team.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(6, 13, 33, 0.904) 0%, rgba(6, 13, 33, 0.904) 40%, rgba(6, 13, 33, 0.904 ) 100%);
+  z-index: 1;
+}
+
+#about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+#about .site-footer {
+  position: relative;
+  z-index: 3;
+}
+
+#about h1 {
+  font-family: 'TheSeasons', 'The Seasons', Georgia, serif;
+  color: #e8e8f2;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#about .about-content {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+#about .about-text p {
+  color: #e8e8f2;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family: 'TheSeasons', 'The Seasons', Georgia, serif;
+}
+
+#about .about-text p:last-child {
+  margin-bottom: 0;
+}
+
+#about .about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  #about .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  #about h1 {
+    font-size: 2rem;
+  }
+  
+  #about .about-text p {
+    font-size: 1rem;
+  }
+}
